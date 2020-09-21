@@ -57,10 +57,30 @@ console.log(twoTrue(5));
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
+function oneTrue(z) {
+  let answer;
+  if ((z == 9) || (z < 9)){
+    answer = 'truthy';
+  } else {
+    answer = 'falsey'
+  }
+  return answer;
+}
 
-
+console.log(oneTrue(10));
 
 // Write a JavaScript program that runs when both things are not true.  
+function notTrue(n) {
+  let conclusion;
+  if (!(n == 2) && !(n > 2)){
+    conclusion = 'truthy';
+  } else {
+    conclusion = 'falsey'
+  }
+  return conclusion;
+}
+
+console.log(notTrue(1));
 
 // ***************************
 //         PART TWO
